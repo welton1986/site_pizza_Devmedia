@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width, initial-scale=1.0">
+	<title>Formulario</title>
+</head>
+
+<body>
+
+<form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+
+	<fieldset>
+		<legend>Conta:</legend>
+		<div>
+			<label>Email:</label>
+			<input type="Email" name="Email" required minlength="5" maxlength="256"/>
+		</div>
+		
+		<div>
+			<label>Senha:</label>
+			<input type="password" name="Senha" />
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Dados Pessoais:</legend>
+
+	<div>
+		<label>Nome:</label>
+		<input type="text" placeholder="Ex: Welton" name="Nome"/>
+	</div>
+
+	<div>
+		<label>Telefone:</label>
+		<input type="text" placeholder="(11)99999-9999" name="Telefone"/>
+	</div>
+
+	<div>
+		<label>Sexo:</label>
+		<input type="radio" value="Masculino" name="Sexo" checked/>
+		<label>Masculino</label>
+		<input type="radio" value="Feminino" name="Sexo"/> 
+		<label>Feminino</label>
+	</div>
+
+	<div>
+		<label>Data:</label>
+		<input type="date" name="Data aniversario"/>
+	</div>
+
+	<div>
+		<label>Foto de Perfil:</label>
+		<input type="file" accept="image/*" name="Foto Perfil"/>
+	</div>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Endereço:</legend>
+	
+	<div>
+		<label>Rua:</label>
+		<input type="text" name="Endereço rua">
+	</div>
+
+	<div>
+		<label>Complemento:</label>
+		<input type="text" name="Complemento">
+	</div>
+
+	<div>
+		<label>Numero</label>
+		<input type="number" min="1" max="9999" name="Numero casa"/>
+	</div>
+
+	<div>
+		<label>Cidade:</label>
+		<input type="text" name="Cidade">
+	</div>
+
+	<div>
+		<label>Estado</label>
+		<select name="Endereço estados">
+			<option value="SP">Sao Paulo </option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="PA">Paraiba </option>
+		</select>
+	</div>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Anuncio:</legend>
+
+	<div>
+		<label>Como voçe conheceu a Hello Pizza? </label>
+		<textarea name="Como_conheci_o_site" maxlength="256" placeholder="Atraves do google."></textarea>
+	</div>
+
+	<div>
+		<input type="checkbox" checked name="receber anuncio"/>
+		<label>Desejo receber ofertas por E-MAIL.</label>
+	</div>
+	</fieldset>
+
+	<button type="submit">Enviar</button>
+	
+</form>
+
+</body>
+
+</html>
